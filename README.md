@@ -1,70 +1,96 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">🎮 Tic Tac Toe React Frontend</h1>
+<h>project is live at https://himanshijain-2005.github.io/Project-Tic_tac/ <h1>
+<p align="center">
+  A simple Tic Tac Toe game built with <strong>React.js</strong>. 
+  The app demonstrates component hierarchy and state management using class components.
+</p>
 
-## Available Scripts
+<hr>
 
-In the project directory, you can run:
+<h2>🚀 Project Setup</h2>
 
-### `npm start`
+<pre>
+# Create React app
+npx create-react-app frontend
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Navigate into the project folder
+cd frontend
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Start the development server
+npm start
+</pre>
 
-### `npm test`
+<hr>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h2>🧩 Component Structure & Logic</h2>
 
-### `npm run build`
+<p>The app consists of three main components located under the <code>src/</code> folder:</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<ul>
+  <li><strong>Square.js</strong> - Represents an individual square on the board.</li>
+  <li><strong>Board.js</strong> - Contains 9 squares and manages their layout.</li>
+  <li><strong>Game.js</strong> - Main game logic implemented as a class component. Maintains game state (e.g., player turns, board values) and handles moves.</li>
+</ul>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p>The component hierarchy and data flow:</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<pre>
+Game.js (class component, manages state)
+  ↓ passes props
+Board.js (renders squares)
+  ↓ passes props
+Square.js (renders individual square)
+</pre>
 
-### `npm run eject`
+<p><strong>State & Logic:</strong></p>
+<ul>
+  <li><code>Game.js</code> holds the entire game state, including which squares are filled and whose turn it is.</li>
+  <li>Values for each square are calculated and managed inside <code>Game.js</code>.</li>
+  <li>These values are passed down as <code>props</code> from <code>Game.js</code> to <code>Board.js</code>, then from <code>Board.js</code> to each <code>Square.js</code>.</li>
+</ul>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<hr>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<h2>📁 Folder Structure</h2>
+<pre>
+frontend/
+├── src/
+│   ├── components/
+│   │   ├── Square.js
+│   │   ├── Board.js
+│   │   └── Game.js
+│   ├── App.js
+│   ├── index.js
+│   └── ...
+├── package.json
+└── README.md
+</pre>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<hr>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<h2>⚙️ How to Run</h2>
 
-## Learn More
+<ol>
+  <li>Open terminal and run <code>npx create-react-app frontend</code></li>
+  <li>Navigate into the folder: <code>cd frontend</code></li>
+  <li>Start the app: <code>npm start</code></li>
+  <li>The app will open in your browser at <code>http://localhost:3000</code></li>
+</ol>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<hr>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<h2>💡 Key Takeaways</h2>
 
-### Code Splitting
+<ul>
+  <li>Class components and state management in React.</li>
+  <li>Passing props down the component tree.</li>
+  <li>Handling events and updating state to reflect UI changes.</li>
+  <li>Component-based architecture for reusable UI pieces.</li>
+</ul>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<hr>
 
-### Analyzing the Bundle Size
+<h2>🙏 Acknowledgements</h2>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p>Inspired by React official tutorial and component design principles.</p>
