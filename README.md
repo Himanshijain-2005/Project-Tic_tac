@@ -1,10 +1,10 @@
 
 <h1 align="center">🎮 Tic Tac Toe React Frontend</h1>
-<h>project is live at https://himanshijain-2005.github.io/Project-Tic_tac/ <h1>
-<p align="center">
+<h3 align="center"> project is live at https://himanshijain-2005.github.io/Project-Tic_tac/  </h3>
+<h4 align="center">
   A simple Tic Tac Toe game built with <strong>React.js</strong>. 
   The app demonstrates component hierarchy and state management using class components.
-</p>
+</h4>
 
 <hr>
 
